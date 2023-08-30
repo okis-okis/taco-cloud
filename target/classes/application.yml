@@ -1,6 +1,8 @@
 spring:
  thymeleaf:
   cache: false
- datasource:
-  generate-unique-name: false
-  name: tacocloud
+ data:
+  cassandra:
+   keyspace-name: taco_cloud
+   schema-action: recreate
+   local-datacenter: datacenter1
